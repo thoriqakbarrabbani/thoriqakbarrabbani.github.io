@@ -182,7 +182,7 @@
             videoPlayer.src = ep.videoPath;
             videoPlayer.load();
             videoPlayer.play().then(() => updatePlayPauseUI(true)).catch(() => updatePlayPauseUI(false));
-            currentTitleEl.innerText = `Menonton: ${ep.chapterName}`;
+            currentTitleEl.innerText = `Esp: ${ep.chapterName}`;
             
             document.querySelectorAll('#episode-list button').forEach(b => b.classList.remove('active-episode'));
             const activeBtn = document.getElementById(`ep-btn-${index}`);
